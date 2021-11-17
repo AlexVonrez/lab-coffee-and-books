@@ -1,0 +1,10 @@
+<a class="btn btn-primary btn-lg"  href="/">HOME</a>
+
+<h1 class="h1">Places List</h1>
+{{#each allPlaces}}
+
+<p class="display-6"> Name:{{name}} Type:{{type}}</p>
+<a class="btn btn-danger" href="/places/{{_id}}/delete">Delete</a>
+<a class="btn btn-warning" href="/places/edit-places/{{id}}">Editar</a>
+{{/each}}
+

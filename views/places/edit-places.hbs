@@ -1,0 +1,21 @@
+<h1>Edit {{name}}</h1>
+
+<form method="POST" action="/places/edit-places/{{id}}">
+
+    <label for="name">Name
+        <input id="name" name="name" type="text" value="{{name}}">
+    </label>
+    <br>
+
+
+    <label for="type">Type
+        <select name="type" id="type">
+            <option value="coffe shop">coffe shop</option>
+            <option value="bookstore">bookstore</option>
+        </select>
+    </label>
+    <br>
+
+    <input class="btn btn-warning" type="submit" value="Editar Lugar">
+
+</form>
